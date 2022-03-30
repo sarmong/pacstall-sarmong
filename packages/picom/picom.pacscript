@@ -10,12 +10,12 @@ prepare() {
 }
 
 build() {
-        meson --buildtype=release . build
-        ninja -C build
+        sudo meson --buildtype=release . build
+        sudo ninja -C build
 }
 
 install() {
-        DESTDIR="${STOWDIR}/${name}" ninja -C build install
+        DESTDIR="${STOWDIR}/${name}" sudo ninja -C build install
 
         # example conf
         install -D -m644 "picom.sample.conf" "${pkgdir}/etc/xdg/picom.conf.example"
