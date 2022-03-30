@@ -1,0 +1,6 @@
+name="skype-deb"
+pkgname="skype"
+breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app"
+version="64"
+url="https://go.skype.com/skypeforlinux-${version}.deb"
+hash="e396876fa048d2452724e951b2097219d67afbcb0b98764adc537c9d8a6e1d73"
