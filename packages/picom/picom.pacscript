@@ -6,7 +6,7 @@ depends="libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-sh
 hash="b65a66e5abe32eda8f67048a9ab3178097a8652560102c33426b3cc5129b361f"
 
 prepare() {
-        git submodule update --init --recursive
+        true
 }
 
 build() {
