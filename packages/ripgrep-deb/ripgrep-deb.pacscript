@@ -1,0 +1,7 @@
+name="ripgrep-deb"
+pkgname="ripgrep"
+description="ripgrep recursively searches directories for a regex pattern while respecting your gitignore"
+breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app"
+version="13.0.0"
+url="https://github.com/BurntSushi/ripgrep/releases/download/${version}/ripgrep_${version}_amd64.deb"
+hash="6d78bed13722019cb4f9d0cf366715e2dcd589f4cf91897efb28216a6bb319f1"
