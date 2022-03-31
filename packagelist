@@ -9,4 +9,5 @@ zoom-deb
 gendesk-bin
 picom
 tig
-lazynpm
+lazynpm-bin
+lazygit-bin
