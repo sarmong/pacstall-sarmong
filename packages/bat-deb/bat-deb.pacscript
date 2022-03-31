@@ -1,5 +1,6 @@
 name="bat-deb"
 pkgname="bat"
+description="A cat(1) clone with wings."
 breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app"
 version="0.20.0"
 url="https://github.com/sharkdp/bat/releases/download/v${version}/bat_${version}_amd64.deb"

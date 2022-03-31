@@ -1,5 +1,6 @@
 name="fd-deb"
 pkgname="fd"
+description="A simple, fast and user-friendly alternative to 'find'"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app"
 version="8.3.2"
 url="https://github.com/sharkdp/fd/releases/download/v${version}/fd_${version}_amd64.deb"
