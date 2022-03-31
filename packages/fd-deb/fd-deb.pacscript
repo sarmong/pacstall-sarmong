@@ -1,0 +1,6 @@
+name="fd-deb"
+pkgname="fd"
+breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app"
+version="8.3.2"
+url="https://github.com/sharkdp/fd/releases/download/v${version}/fd_${version}_amd64.deb"
+hash="102d72c8ce1dc0973487e8ba057a2cf5a8b20158d11f500e385368fc32520d99"
