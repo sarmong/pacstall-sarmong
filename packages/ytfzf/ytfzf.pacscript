@@ -14,6 +14,5 @@ build() {
 }
 
 install() {
-        sudo make DESTDIR=install doc
-        sudo make DESTDIR="${STOWDIR}/${name}" install doc
+        sudo make DESTDIR="${STOWDIR}/${name}" install doc addons
 }
