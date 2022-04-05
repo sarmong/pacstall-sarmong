@@ -1,0 +1,74 @@
+#!/bin/sh
+
+type="$2"
+pkgname="$1"
+
+name=$([ -z "$type" ] && echo "$pkgname" || echo "$pkgname-$type")
+
+echo "$name" >>./packagelist
+
+sort -o packagelist packagelist
+
+mkdir ./packages/"$name"
+file="./packages/$name/$name.pacscript"
+
+bin_bp="
+name=\"$name\"
+pkgname=\"$pkgname\"
+description=\"___\"
+version=\"___\"
+url=\"___\"
+hash=\"___\"
+
+prepare() {
+        true
+}
+
+build() {
+        true
+}
+
+install() {
+        sudo install -Dm755 $pkgname \"\${STOWDIR}/\${name}/usr/local/bin/\${pkgname}\"
+}
+  "
+
+default="
+name=\"$name\"
+description=\"___\"
+version=\"___\"
+url=\"___\"
+build_depends=\"___\"
+depends=\"___\"
+hash=\"___\"
+
+prepare() {
+        true
+}
+
+build() {
+        make -j\$(nproc)
+}
+
+install() {
+        sudo make DESTDIR=\"\${STOWDIR}/\${name}\" install
+}
+"
+
+case "$type" in
+"bin")
+	echo "$bin_bp" >"$file"
+	;;
+"deb")
+	echo 2 or 3
+	;;
+"app")
+	echo default
+	;;
+"git")
+	echo default
+	;;
+*)
+	echo "$default" >"$file"
+	;;
+esac
