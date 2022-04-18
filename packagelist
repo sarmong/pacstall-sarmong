@@ -14,6 +14,7 @@ mpv
 newsboat
 picom
 pomo-git
+python-pulsectl
 ripgrep-deb
 rofi
 rofi-calc
@@ -23,6 +24,7 @@ stylua-bin
 thefuck
 tig
 urlscan
+volctl
 wmutils-git
 xkblayout-state-git
 yt-dlp-bin
