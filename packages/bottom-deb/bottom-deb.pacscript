@@ -1,0 +1,6 @@
+name="bottom-deb"
+pkgname="bottom"
+description="Yet another cross-platform graphical process/system monitor."
+breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app"
+version="0.6.8"
+url="https://github.com/ClementTsang/bottom/releases/download/${version}/bottom_${version}_amd64.deb"
