@@ -1,20 +1,12 @@
 name="clipmenu-git"
-description="Clipboard management using dmenu"
 pkgname="clipmenu"
+pkgdesc="Clipboard management using dmenu"
 url="https://github.com/cdown/clipmenu.git"
 pacdeps=("clipnotify")
 depends=("xsel")
 
 pkgver() {
         git ls-remote "${url}" master | cut -f1
-}
-
-prepare() {
-        true
-}
-
-build() {
-        true
 }
 
 install() {
