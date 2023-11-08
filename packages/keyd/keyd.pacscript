@@ -1,6 +1,6 @@
 name="keyd"
 pkgdesc=" A key remapping daemon for linux"
-pkgver="2.3.1-rc"
+pkgver="2.4.3"
 url="https://github.com/rvaiya/keyd/archive/refs/tags/v${pkgver}.zip"
 build_depends="gcc"
 optdepends=("python: for application specific remapping"
