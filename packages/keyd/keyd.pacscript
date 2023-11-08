@@ -5,7 +5,7 @@ url="https://github.com/rvaiya/keyd/archive/refs/tags/v${pkgver}.zip"
 build_depends="gcc"
 optdepends=("python: for application specific remapping"
             "python-xlib: only for X support")
-hash="8e6766ba47757b42583646e2234d27018628664ca89b34eb642d69c7afa7d1de"
+hash="cdfcc2cf0518b9a2d292ebac17b18f78548b92803e2a9deeb9f18c9641bf80e5"
 
 prepare() {
         true
