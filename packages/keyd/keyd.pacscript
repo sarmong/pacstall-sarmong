@@ -15,7 +15,7 @@ build() {
         make -j$(nproc)
 }
 
-install() {
+package() {
         # opt-in for systemd service and libinput quirks
         sudo mkdir -p "${STOWDIR}/${name}"/usr/lib/systemd/system
         sudo mkdir -p "${STOWDIR}/${name}"/usr/share/libinput
@@ -23,7 +23,7 @@ install() {
         sudo make DESTDIR="${STOWDIR}/${name}" install
 }
 
-postinst() {
+post_install() {
         sudo systemctl enable keyd
         sudo systemctl start keyd
 }
