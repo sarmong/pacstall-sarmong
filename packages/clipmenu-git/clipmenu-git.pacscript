@@ -4,6 +4,7 @@ pkgdesc="Clipboard management using dmenu"
 url="https://github.com/cdown/clipmenu.git"
 pacdeps=("clipnotify-git")
 pkgver="1.0"
+makedepends=("xsel")
 depends=("xsel")
 
 pkgver() {
