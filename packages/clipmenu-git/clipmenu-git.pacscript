@@ -2,13 +2,13 @@ name="clipmenu-git"
 pkgname="clipmenu"
 pkgdesc="Clipboard management using dmenu"
 url="https://github.com/cdown/clipmenu.git"
-pacdeps=("clipnotify")
+pacdeps=("clipnotify-git")
 depends=("xsel")
 
 pkgver() {
         git ls-remote "${url}" master | cut -f1
 }
 
-install() {
+package() {
         sudo make PREFIX="${STOWDIR}/${name}/usr/local" install
 }
