@@ -1,8 +1,9 @@
 name="rofi-calc"
-description="Do live calculations in rofi!"
-version="2.1.0"
-url="https://github.com/svenstaro/rofi-calc/archive/refs/tags/v${version}.zip"
+pkgdesc="Do live calculations in rofi!"
+pkgver="2.2.0"
+url="https://github.com/svenstaro/rofi-calc/archive/refs/tags/v${pkgver}.zip"
 depends="qalc libtool"
+hash="5f3ba0699ea8cf0f700b89b0ff95ae89540471540249d03f9b1057d92c69a9e2"
 
 prepare() {
         autoreconf -i
@@ -15,6 +16,6 @@ build() {
         make -j$(nproc)
 }
 
-install() {
+package() {
         sudo make DESTDIR="${STOWDIR}/${name}" install
 }
