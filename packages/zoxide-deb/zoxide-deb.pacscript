@@ -1,0 +1,6 @@
+name="zoxide-deb"
+pkgname="zoxide"
+pkgdesc="A fast cd command that learns your habits"
+pkgver="0.9.2"
+url="https://github.com/ajeetdsouza/zoxide/releases/download/v${pkgver}/zoxide_${pkgver}_amd64.deb"
+hash="a50c0073270aa3118c8505e1e6c4deec385cef61a25d1916d7c2ad7ba9df8839"
