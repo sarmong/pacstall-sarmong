@@ -1,8 +1,8 @@
 name="stylua-bin"
 pkgname="stylua"
-description="An opinionated Lua code formatter"
-version="0.13.1"
-url="https://github.com/JohnnyMorganz/StyLua/releases/download/v${version}/stylua-linux.zip"
+pkgdesc="An opinionated Lua code formatter"
+pkgver="0.13.1"
+url="https://github.com/JohnnyMorganz/StyLua/releases/download/v${pkgver}/stylua-linux.zip"
 hash="499f98f0fb2c5fc5ad5c4b064086ba4a75e6ad64ffb6348d284add7185012472"
 
 prepare() {
@@ -13,7 +13,7 @@ build() {
         true
 }
 
-install() {
+package() {
         sudo install -Dm755 stylua "${STOWDIR}/${name}/usr/local/bin/${pkgname}"
 }
   

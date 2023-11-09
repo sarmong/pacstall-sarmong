@@ -15,8 +15,8 @@ file="./packages/$name/$name.pacscript"
 bin_bp="
 name=\"$name\"
 pkgname=\"$pkgname\"
-description=\"___\"
-version=\"___\"
+pkgdesc=\"___\"
+pkgver=\"___\"
 url=\"___\"
 hash=\"___\"
 
@@ -28,15 +28,15 @@ build() {
         true
 }
 
-install() {
+package() {
         sudo install -Dm755 $pkgname \"\${STOWDIR}/\${name}/usr/local/bin/\${pkgname}\"
 }
   "
 
 default="
 name=\"$name\"
-description=\"___\"
-version=\"___\"
+pkgdesc=\"___\"
+pkgver=\"___\"
 url=\"___\"
 build_depends=\"___\"
 depends=\"___\"
@@ -50,7 +50,7 @@ build() {
         make -j\$(nproc)
 }
 
-install() {
+package() {
         sudo make DESTDIR=\"\${STOWDIR}/\${name}\" install
 }
 "

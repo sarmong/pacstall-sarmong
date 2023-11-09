@@ -1,7 +1,7 @@
 name="wmutils-git"
 pkgname="wmutils"
-description="Set of window manipulation tools"
-version="0.15.2"
+pkgdesc="Set of window manipulation tools"
+pkgver="0.15.2"
 url="https://github.com/wmutils/core.git"
 depends="libxcb1-dev"
 
@@ -17,6 +17,6 @@ build() {
         make -j$(nproc)
 }
 
-install() {
+package() {
         sudo make DESTDIR="${STOWDIR}/${name}" PREFIX="/usr/local" MANPREFIX="/usr/local/share/man" install
 }

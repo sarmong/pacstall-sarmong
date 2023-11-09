@@ -23,7 +23,7 @@ package() {
         sudo make DESTDIR="${STOWDIR}/${name}" install
 }
 
-post_install() {
+post_package() {
         sudo systemctl enable keyd
         sudo systemctl start keyd
 }

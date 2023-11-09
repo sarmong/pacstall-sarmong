@@ -1,6 +1,6 @@
 name="pomo-git"
 pkgname="pomo"
-description="Pomodoro CLI"
+pkgdesc="Pomodoro CLI"
 url="https://github.com/kevinschoon/pomo.git"
 build_depends="golang-go"
 
@@ -8,14 +8,10 @@ pkgver() {
         git ls-remote "${url}" master | cut -f1
 }
 
-prepare() {
-        true
-}
-
 build() {
         make -j$(nproc)
 }
 
-install() {
+package() {
         sudo install -Dm755 bin/pomo "${STOWDIR}/${name}/usr/local/bin/${pkgname}"
 }
