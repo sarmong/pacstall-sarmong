@@ -20,7 +20,7 @@ mpv
 newsboat
 picom
 pomo-git
-python-pulsectl
+python3-pulsectl
 ripgrep-deb
 rofi
 rofi-calc

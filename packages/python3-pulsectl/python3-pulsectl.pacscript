@@ -1,9 +1,9 @@
-name="python-pulsectl"
+name="python3-pulsectl"
 pkgdesc="Python high-level interface and ctypes-based bindings for PulseAudio (libpulse)"
-pkgver="22.3.2"
+pkgver="23.5.2"
 url="https://files.pythonhosted.org/packages/source/p/pulsectl/pulsectl-${pkgver}.tar.gz"
 depends="libpulse-dev python3 python3-pip python-setuptools python-wheel-common"
-hash="cc174e1ceebd4e6222c5b78f4f415f12e80753c9ab75ab354159b4cb5950b084"
+hash="e911d398eaf0539cf3c63b4217357b51a3d1b7e4a50607d1591cf2b49f5d2c6a"
 
 build() {
         sudo pip3 install build
