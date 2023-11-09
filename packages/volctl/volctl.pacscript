@@ -1,20 +1,12 @@
 name="volctl"
-description="Per-application volume control and OSD for Linux desktops"
-version="0.9.2"
-url="https://github.com/buzz/volctl/archive/refs/tags/v${version}.zip"
+pkgdesc="Per-application volume control and OSD for Linux desktops"
+pkgver="0.9.4"
+url="https://github.com/buzz/volctl/archive/refs/tags/v${pkgver}.zip"
 depends="python3 python-setuptools python-cairo python-gobject pulseaudio"
 pacdeps=("python-pulsectl")
-hash="63e0634054e52579d6aeaafe32292d91fa2d9f1cab2144cfb5b0d24538fbddec"
+hash="c5f2e5f9cc9ce15938683d65f76ce9eded3616c4f082dcae78e0adfbe6911c46"
 
-prepare() {
-        true
-}
-
-build() {
-        true
-}
-
-install() {
+package() {
         sudo python3 setup.py install --root="${STOWDIR}/${name}"
         sudo install -Dm644 data/apps.volctl.gschema.xml -t "${STOWDIR}/${name}/usr/share/glib-2.0/schemas/"
 }
