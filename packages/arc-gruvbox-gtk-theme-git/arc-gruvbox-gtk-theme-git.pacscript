@@ -9,7 +9,7 @@ pkgver() {
 }
 
 build() {
-    ./autogen.sh --prefix=/usr
+    ./autogen.sh --prefix=/usr --disable-darker --disable-dark --disable-cinnamon
 }
 
 package() {
