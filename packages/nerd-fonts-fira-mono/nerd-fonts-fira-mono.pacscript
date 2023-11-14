@@ -6,7 +6,7 @@ url="https://github.com/ryanoasis/nerd-fonts/releases/download/v${pkgver}/FiraMo
 hash="8bd1aca6c2abf629d25e1ccf34a92d2ae8d48b2ff21ace473ac7ac0c2d2b3fc6"
 
 package() {
-  sudo install -d "${pkgdir}"/usr/share/fonts/TTF
-  sudo rm "${SRCDIR:?}/"*"Windows Compatible.ttf"
-  sudo install -Dm644 "${SRCDIR}/"*.ttf "${pkgdir}"/usr/share/fonts/TTF
+  sudo install -d "${pkgdir}"/usr/share/fonts/OTF
+  sudo rm "${SRCDIR:?}/"*"Windows Compatible.otf"
+  sudo install -Dm644 "${SRCDIR}/"*.otf "${pkgdir}"/usr/share/fonts/OTF
 }
