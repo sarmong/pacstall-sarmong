@@ -6,6 +6,6 @@ url="https://github.com/Byron/dua-cli/releases/download/v${pkgver}/dua-v${pkgver
 hash="2bb8b2a9bd3ea051a5f0c30bca6557a475c13794ca04fbc199b2def7f811be6e"
 
 package() {
-        sudo install -Dm755 dua "${STOWDIR}/${name}/usr/local/bin/${pkgname}"
+        sudo install -Dm755 dua "${STOWDIR}/${name}/usr/local/bin/dua"
 }
 
