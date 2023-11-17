@@ -22,8 +22,3 @@ package() {
 
   sudo install -Dm644 "${pkgname}.png" -t "${pkgdir}/usr/share/pixmaps"
 }
-
-post_remove() {
-  sudo rm "${pkgdir}/usr/share/applications/${pkgname}.desktop"
-  sudo rm "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
-}
