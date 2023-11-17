@@ -6,6 +6,6 @@ url="https://github.com/qarmin/czkawka/releases/download/${pkgver}/linux_czkawka
 hash="2f4086b7a88690d804018acdc20a52a6f5d949b979616b3e84201b0e3331a34e"
 
 package() {
-        sudo install -Dm755 czkawka-gui "${STOWDIR}/${name}/usr/local/bin/${pkgname}"
+        sudo install -Dm755 linux_czkawka_gui "${STOWDIR}/${name}/usr/local/bin/${pkgname}"
 }
 
