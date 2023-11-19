@@ -10,7 +10,7 @@ prepare() {
   wget -q "https://raw.githubusercontent.com/sarmong/pacstall-sarmong/master/packages/${name}/${pkgname}.desktop"
   wget -q "https://raw.githubusercontent.com/sarmong/pacstall-sarmong/master/packages/${name}/${pkgname}.png"
   if [[ "$(sha256sum ${pkgname}.desktop | cut -d' ' -f 1)" != "${desktop_file_hash}" ]]; then
-    fancy_message error "Checksum for pycharm.desktop failed"
+    fancy_message error "Checksum for ${pkgname}.desktop failed"
     return 1
   fi
 }
