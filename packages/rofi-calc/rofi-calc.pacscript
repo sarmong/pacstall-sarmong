@@ -14,6 +14,7 @@ prepare() {
 }
 
 build() {
+    cd "${_archive}"
     mkdir build
     cd build
     ../configure
