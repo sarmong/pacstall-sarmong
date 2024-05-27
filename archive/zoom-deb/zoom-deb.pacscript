@@ -1,0 +1,5 @@
+name="zoom-deb"
+pkgname="zoom"
+breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app"
+source="https://zoom.us/client/latest/zoom_amd64.deb"
+pkgver="1"
