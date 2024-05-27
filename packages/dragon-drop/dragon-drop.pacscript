@@ -1,15 +1,17 @@
-name="dragon-drop"
+pkgname="dragon-drop"
 pkgdesc="Drag and drop source/target for X"
 pkgver="1.2.0"
-url="https://github.com/mwh/dragon/archive/refs/tags/v${pkgver}.zip"
+source="https://github.com/mwh/dragon/archive/refs/tags/v${pkgver}.zip"
 makedepends="libgtk-3-dev"
 depends="libgtk-3-dev"
-hash="5a89518b554034696923b624b9430c0dc160589e015179ec531d650c6c339133"
+sha256sum="5a89518b554034696923b624b9430c0dc160589e015179ec531d650c6c339133"
 
 build() {
+   cd "${_archive}"
         make -j$(nproc) NAME=${pkgname}
 }
 
 package() {
-        sudo make DESTDIR="${STOWDIR}/$name" PREFIX='/usr' NAME="${name}" install
+   cd "${_archive}"
+        make DESTDIR="${STAGEDIR}/${pkgname}" PREFIX='/usr' NAME="${pkgname}" install
 }

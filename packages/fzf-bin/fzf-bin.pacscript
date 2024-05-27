@@ -1,18 +1,11 @@
-name="fzf-bin"
-pkgname="fzf"
+pkgname="fzf-bin"
+gives="fzf"
 pkgdesc="A command-line fuzzy finder"
 pkgver="0.50.0"
-url="https://github.com/junegunn/fzf/releases/download/${pkgver}/fzf-${pkgver}-linux_amd64.tar.gz"
-
-prepare() {
-        true
-}
-
-build() {
-        true
-}
+source="https://github.com/junegunn/fzf/releases/download/${pkgver}/fzf-${pkgver}-linux_amd64.tar.gz"
 
 package() {
-        sudo install -Dm755 fzf "${STOWDIR}/${name}/usr/local/bin/${pkgname}"
+   cd "${_archive}"
+   install -Dm755 "${gives}" -t "${pkgdir}/usr/local/bin"
 }
 

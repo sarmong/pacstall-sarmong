@@ -1,19 +1,21 @@
-name="clipnotify-git"
-pkgname="clipnotify"
+pkgname="clipnotify-git"
+gives="clipnotify"
 pkgdesc="Notify on new X clipboard events"
 pkgver="1.0"
-url="https://github.com/cdown/clipnotify.git"
+source="https://github.com/cdown/clipnotify.git"
 makedepends=("libxtst-dev")
 depends=("libxtst-dev")
 
 pkgver() {
-        git ls-remote "${url}" master | cut -f1
+   git ls-remote origin master | cut -f1
 }
 
 build() {
-        make -j$(nproc)
+   cd "${_archive}"
+   make -j$(nproc)
 }
 
 package() {
-        sudo make DESTDIR="${STOWDIR}/${name}" install
+   cd "${_archive}"
+   make DESTDIR="${STAGEDIR}/${name}" install
 }

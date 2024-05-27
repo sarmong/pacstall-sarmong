@@ -17,8 +17,8 @@ name=\"$name\"
 pkgname=\"$pkgname\"
 pkgdesc=\"___\"
 pkgver=\"___\"
-url=\"___\"
-hash=\"___\"
+source=\"___\"
+sha256sum=\"___\"
 
 prepare() {
         true
@@ -29,7 +29,7 @@ build() {
 }
 
 package() {
-        sudo install -Dm755 $pkgname \"\${STOWDIR}/\${name}/usr/local/bin/\${pkgname}\"
+        sudo install -Dm755 $pkgname \"\${STAGEDIR}/\${name}/usr/local/bin/\${pkgname}\"
 }
   "
 
@@ -37,10 +37,10 @@ default="
 name=\"$name\"
 pkgdesc=\"___\"
 pkgver=\"___\"
-url=\"___\"
+source=\"___\"
 build_depends=\"___\"
 depends=\"___\"
-hash=\"___\"
+sha256sum=\"___\"
 
 prepare() {
         true
@@ -51,7 +51,7 @@ build() {
 }
 
 package() {
-        sudo make DESTDIR=\"\${STOWDIR}/\${name}\" install
+        sudo make DESTDIR=\"\${STAGEDIR}/\${name}\" install
 }
 "
 

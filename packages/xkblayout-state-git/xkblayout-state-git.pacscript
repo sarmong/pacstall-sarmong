@@ -1,18 +1,21 @@
-name="xkblayout-state-git"
-pkgname="xkblayout-state"
+pkgname="xkblayout-state-git"
+gives="xkblayout-state"
 pkgdesc="A small command-line program to get/set the current keyboard layout."
 pkgver="1.0"
-url="https://github.com/nonpop/xkblayout-state.git"
+source="https://github.com/nonpop/xkblayout-state.git"
 depends="libx11-dev"
 
 pkgver() {
-        git ls-remote "${url}" master | cut -f1
+       cd "${_archive}"
+        git ls-remote origin master | cut -f1
 }
 
 build() {
+       cd "${_archive}"
         make -j$(nproc)
 }
 
 package() {
-        sudo make DESTDIR="${STOWDIR}/${name}" PREFIX="/usr/local" install
+       cd "${_archive}"
+        make DESTDIR="${STAGEDIR}/${name}" PREFIX="/usr/local" install
 }

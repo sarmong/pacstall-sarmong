@@ -2,11 +2,11 @@ name="wmutils-git"
 pkgname="wmutils"
 pkgdesc="Set of window manipulation tools"
 pkgver="0.15.2"
-url="https://github.com/wmutils/core.git"
+source="https://github.com/wmutils/core.git"
 depends="libxcb1-dev"
 
 pkgver() {
-        git ls-remote "${url}" master | cut -f1
+        git ls-remote "${source}" master | cut -f1
 }
 
 prepare() {
@@ -18,5 +18,5 @@ build() {
 }
 
 package() {
-        sudo make DESTDIR="${STOWDIR}/${name}" PREFIX="/usr/local" MANPREFIX="/usr/local/share/man" install
+        sudo make DESTDIR="${STAGEDIR}/${name}" PREFIX="/usr/local" MANPREFIX="/usr/local/share/man" install
 }
