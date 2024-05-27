@@ -7,18 +7,21 @@ makedepends=("rofi-dev" "qalc" "libtool" "libtool-bin")
 depends=("rofi-dev" "qalc" "libtool" "libtool-bin")
 sha256sum="5f3ba0699ea8cf0f700b89b0ff95ae89540471540249d03f9b1057d92c69a9e2"
 
+prepare() {
+    cd "${_archive}"
+    mkdir m4
+    autoreconf -i
+}
+
 build() {
-       cd "${_archive}"
-        mkdir m4
-        autoreconf -i
-        mkdir build
-        cd build
-        ../configure
-        make -j$(nproc)
+    mkdir build
+    cd build
+    ../configure
+    make -j$(nproc)
 }
 
 package() {
-       cd "${_archive}"
-        cd build
-        make install DESTDIR="${pkgdir}"
+   cd "${_archive}"
+   cd build
+   make install DESTDIR="${pkgdir}"
 }
