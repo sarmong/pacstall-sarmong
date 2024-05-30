@@ -9,8 +9,8 @@ sha256sum="c5f2e5f9cc9ce15938683d65f76ce9eded3616c4f082dcae78e0adfbe6911c46"
 
 package() {
    cd "${_archive}"
-        python3 setup.py install --root="${STAGEDIR}/${name}"
-        install -Dm644 data/apps.volctl.gschema.xml -t "${STAGEDIR}/${name}/usr/share/glib-2.0/schemas/"
+        python3 setup.py install --root="${pkgdir}"
+        install -Dm644 data/apps.volctl.gschema.xml -t "${pkgdir}/usr/share/glib-2.0/schemas/"
 }
 
 post_install() {

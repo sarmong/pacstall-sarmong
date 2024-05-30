@@ -15,10 +15,10 @@ build() {
 package() {
        cd "${_archive}"
         # opt-in for systemd service and libinput quirks
-        mkdir -p "${STAGEDIR}/${name}"/usr/lib/systemd/system
-        mkdir -p "${STAGEDIR}/${name}"/usr/share/libinput
+        mkdir -p "${pkgdir}"/usr/lib/systemd/system
+        mkdir -p "${pkgdir}"/usr/share/libinput
 
-        make DESTDIR="${STAGEDIR}/${name}" install
+        make DESTDIR="${pkgdir}" install
 }
 
 post_package() {

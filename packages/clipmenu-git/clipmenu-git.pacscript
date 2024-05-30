@@ -14,5 +14,5 @@ pkgver() {
 
 package() {
    cd "${_archive}"
-   make PREFIX="${STAGEDIR}/${gives}/usr/local" install
+   make PREFIX="${pkgdir}/usr/local" install
 }

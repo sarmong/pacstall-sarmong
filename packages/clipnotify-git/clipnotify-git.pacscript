@@ -17,5 +17,5 @@ build() {
 
 package() {
    cd "${_archive}"
-   make DESTDIR="${STAGEDIR}/${name}" install
+   make DESTDIR="${pkgdir}" install
 }
