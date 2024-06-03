@@ -11,6 +11,7 @@ package() {
    cd "${_archive}"
 
    install -Dm755 betterlockscreen "${pkgdir}/usr/local/bin/${pkgname}"
-   install -Dm755 system/betterlockscreen@.service "${pkgdir}/usr/lib/systemd/system/betterlockscreen@.service"
+   ls system
+   install -Dm644 system/betterlockscreen@.service "${pkgdir}/usr/lib/systemd/system/betterlockscreen@.service"
    systemctl enable betterlockscreen@"$PACSTALL_USER"
 }
