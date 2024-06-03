@@ -13,5 +13,8 @@ package() {
    install -Dm755 betterlockscreen "${pkgdir}/usr/local/bin/${pkgname}"
    ls system
    install -Dm644 system/betterlockscreen@.service "${pkgdir}/usr/lib/systemd/system/betterlockscreen@.service"
+}
+
+post_install() {
    systemctl enable betterlockscreen@"$PACSTALL_USER"
 }
