@@ -4,6 +4,7 @@ pkgdesc="An aesthetic cursor theme for Linux desktops."
 source="https://gitlab.com/cursors/simp1e.git"
 pkgver="1.0"
 makedepends=("librsvg2-bin" "python3-pil" "x11-apps")
+replaces="${pkgname}"
 
 pkgver() {
   git ls-remote origin master | cut -f1

@@ -5,6 +5,7 @@ source="https://github.com/rvaiya/keyd/archive/refs/tags/v${pkgver}.zip"
 build_depends="gcc"
 optdepends=("python: for application specific remapping"
             "python-xlib: only for X support")
+replaces="${pkgname}"
 sha256sum="cdfcc2cf0518b9a2d292ebac17b18f78548b92803e2a9deeb9f18c9641bf80e5"
 
 build() {

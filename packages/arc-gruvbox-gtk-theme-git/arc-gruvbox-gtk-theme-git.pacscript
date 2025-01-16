@@ -4,6 +4,7 @@ pkgdesc="A flat, grey gruvboxed theme with transparent elements for GTK 3, GTK 2
 source=("https://github.com/sarmong/arc-gruvbox-theme.git")
 makedepends=(libgtk-3-dev)
 depends=(libgtk-3-dev)
+replaces="${pkgname}"
 pkgver="1.0"
 
 build() {

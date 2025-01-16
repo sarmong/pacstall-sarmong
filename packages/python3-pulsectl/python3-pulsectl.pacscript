@@ -4,6 +4,7 @@ pkgver="23.5.2"
 source="https://files.pythonhosted.org/packages/source/p/pulsectl/pulsectl-${pkgver}.tar.gz"
 makedepends=(python3-build libpulse-dev python3 python3-pip python3-setuptools python3-wheel)
 depends=(libpulse-dev python3 python3-pip python3-setuptools python3-wheel)
+replaces="${pkgname}"
 sha256sum="e911d398eaf0539cf3c63b4217357b51a3d1b7e4a50607d1591cf2b49f5d2c6a"
 
 build() {

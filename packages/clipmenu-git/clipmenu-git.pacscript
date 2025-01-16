@@ -6,6 +6,7 @@ pacdeps=("clipnotify-git")
 pkgver="1.0"
 makedepends=("xsel")
 depends=("xsel")
+replaces="${pkgname}"
 
 pkgver() {
    cd "${_archive}"

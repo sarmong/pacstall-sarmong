@@ -5,6 +5,7 @@ pkgver="1.0"
 source="https://github.com/cdown/clipnotify.git"
 makedepends=("libxtst-dev")
 depends=("libxtst-dev")
+replaces="${pkgname}"
 
 pkgver() {
    git ls-remote origin master | cut -f1
