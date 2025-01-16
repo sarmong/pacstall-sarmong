@@ -1,0 +1,5 @@
+pkgname = fzf-bin
+gives = fzf
+pkgver = 0.50.0
+pkgdesc = A command-line fuzzy finder
+source = https://github.com/junegunn/fzf/releases/download/0.50.0/fzf-0.50.0-linux_amd64.tar.gz

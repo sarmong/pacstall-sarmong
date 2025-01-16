@@ -1,0 +1,4 @@
+pkgver = 2.2
+pkgdesc = A posix script to find and watch youtube videos from the terminal. (Without API)
+source = https://github.com/pystardust/ytfzf/archive/refs/tags/v2.2.zip
+depends = jq curl

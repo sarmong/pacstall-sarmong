@@ -1,0 +1,4 @@
+pkgname = lazynpm
+pkgver = 0.1.4
+pkgdesc = terminal UI for npm
+source = https://github.com/jesseduffield/lazynpm/releases/download/v0.1.4/lazynpm_0.1.4_Linux_x86_64.tar.gz

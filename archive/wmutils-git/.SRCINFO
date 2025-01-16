@@ -1,0 +1,5 @@
+pkgname = wmutils
+pkgver = 0.15.2
+pkgdesc = Set of window manipulation tools
+source = https://github.com/wmutils/core.git
+depends = libxcb1-dev

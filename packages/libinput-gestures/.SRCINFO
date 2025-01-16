@@ -1,0 +1,7 @@
+pkgname = libinput-gestures
+pkgver = 2.76
+pkgdesc = Actions gestures on your touchpad using libinput
+source = https://github.com/bulletmark/libinput-gestures/archive/refs/tags/2.76.tar.gz
+depends = wmctrl
+depends = xdotool
+depends = libinput-tools

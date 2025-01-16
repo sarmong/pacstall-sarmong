@@ -1,0 +1,4 @@
+pkgname = skype
+pkgver = 1
+source = https://go.skype.com/skypeforlinux-64.deb
+breaks = skype skype-git skype-bin skype-app

@@ -1,0 +1,7 @@
+pkgname = czkawka-gui-bin
+gives = czkawka-gui
+pkgver = 6.1.0
+pkgdesc = Multi functional app to find duplicates, empty folders, similar images etc.
+source = https://github.com/qarmin/czkawka/releases/download/6.1.0/linux_czkawka_gui
+source = https://raw.githubusercontent.com/sarmong/pacstall-sarmong/master/packages/czkawka-gui-bin/czkawka-gui.desktop
+source = https://raw.githubusercontent.com/sarmong/pacstall-sarmong/master/packages/czkawka-gui-bin/czkawka-gui.png

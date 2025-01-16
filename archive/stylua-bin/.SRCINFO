@@ -1,0 +1,4 @@
+pkgname = stylua
+pkgver = 0.13.1
+pkgdesc = An opinionated Lua code formatter
+source = https://github.com/JohnnyMorganz/StyLua/releases/download/v0.13.1/stylua-linux.zip

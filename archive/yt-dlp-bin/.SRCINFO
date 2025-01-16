@@ -1,0 +1,4 @@
+pkgname = yt-dlp
+pkgver = 2022.03.08.1
+pkgdesc = A youtube-dl fork with additional features and fixes
+source = https://github.com/yt-dlp/yt-dlp/releases/download/2022.03.08.1/yt-dlp

@@ -1,0 +1,4 @@
+pkgname = shfmt
+pkgver = 3.4.3
+pkgdesc = Shell formatter
+source = https://github.com/mvdan/sh/releases/download/v3.4.3/shfmt_v3.4.3_linux_amd64

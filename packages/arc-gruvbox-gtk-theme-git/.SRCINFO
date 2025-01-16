@@ -1,0 +1,7 @@
+pkgname = arc-gruvbox-gtk-theme-git
+gives = arc-gruvbox-gtk-theme
+pkgver = 1.0
+pkgdesc = A flat, grey gruvboxed theme with transparent elements for GTK 3, GTK 2 and gnome-shell. Latest commit from the master branch on Github.
+source = https://github.com/sarmong/arc-gruvbox-theme.git
+depends = libgtk-3-dev
+makedepends = libgtk-3-dev

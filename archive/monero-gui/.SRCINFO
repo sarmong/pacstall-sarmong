@@ -1,0 +1,4 @@
+pkgname = monero-gui
+pkgver = 0.18.3.1
+pkgdesc = Monero: the secure, private, untraceable cryptocurrency
+source = https://downloads.getmonero.org/gui/monero-gui-linux-x64-v0.18.3.1.tar.bz2

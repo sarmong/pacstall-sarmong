@@ -1,0 +1,5 @@
+pkgname = handlr-bin
+gives = handlr
+pkgver = 0.6.4
+pkgdesc = A better xdg-utils
+source = https://github.com/chmln/handlr/releases/download/v0.6.4/handlr

@@ -1,0 +1,4 @@
+pkgname = zoom
+pkgver = 1
+source = https://zoom.us/client/latest/zoom_amd64.deb
+breaks = zoom zoom-git zoom-bin zoom-app

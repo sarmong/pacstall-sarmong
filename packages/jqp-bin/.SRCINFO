@@ -1,0 +1,5 @@
+pkgname = jqp-bin
+gives = jqp
+pkgver = 0.5.0
+pkgdesc = A TUI playground to experiment with jq
+source = https://github.com/noahgorstein/jqp/releases/download/v0.5.0/jqp_Linux_x86_64.tar.gz

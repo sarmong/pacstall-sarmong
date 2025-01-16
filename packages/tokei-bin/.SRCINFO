@@ -1,0 +1,5 @@
+pkgname = tokei-bin
+gives = tokei
+pkgver = 13.0.0
+pkgdesc = Count your code, quickly.
+source = https://github.com/XAMPPRocky/tokei/releases/download/v13.0.0-alpha.0/tokei-x86_64-unknown-linux-gnu.tar.gz

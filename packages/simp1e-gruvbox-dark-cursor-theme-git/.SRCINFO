@@ -1,0 +1,8 @@
+pkgname = simp1e-gruvbox-dark-cursor-theme-git
+gives = simp1e-gruvbox-dark-cursor-theme
+pkgver = 1.0
+pkgdesc = An aesthetic cursor theme for Linux desktops.
+source = https://gitlab.com/cursors/simp1e.git
+makedepends = librsvg2-bin
+makedepends = python3-pil
+makedepends = x11-apps

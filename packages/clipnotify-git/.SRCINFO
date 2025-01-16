@@ -1,0 +1,7 @@
+pkgname = clipnotify-git
+gives = clipnotify
+pkgver = 1.0
+pkgdesc = Notify on new X clipboard events
+source = https://github.com/cdown/clipnotify.git
+depends = libxtst-dev
+makedepends = libxtst-dev

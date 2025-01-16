@@ -1,0 +1,6 @@
+pkgname = keyd
+pkgver = 2.4.3
+pkgdesc = A key remapping daemon for linux
+source = https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.zip
+optdepends = python: for application specific remapping
+optdepends = python-xlib: only for X support

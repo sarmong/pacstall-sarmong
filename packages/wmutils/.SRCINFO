@@ -1,0 +1,10 @@
+pkgname = wmutils
+pkgver = 1.7
+pkgdesc = Set of window manipulation tools
+source = https://github.com/wmutils/core/archive/refs/tags/v1.7.zip
+depends = libxcb1-dev
+depends = libxcb-util-dev
+depends = libxcb-cursor-dev
+makedepends = libxcb1-dev
+makedepends = libxcb-util-dev
+makedepends = libxcb-cursor-dev

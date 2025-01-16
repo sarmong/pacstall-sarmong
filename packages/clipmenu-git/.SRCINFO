@@ -1,0 +1,8 @@
+pkgname = clipmenu-git
+gives = clipmenu
+pkgver = 1.0
+pkgdesc = Clipboard management using dmenu
+source = https://github.com/cdown/clipmenu.git
+depends = xsel
+makedepends = xsel
+pacdeps = clipnotify-git

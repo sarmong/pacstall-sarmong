@@ -1,0 +1,5 @@
+pkgname = czkawka-cli-bin
+gives = czkawka-cli
+pkgver = 6.1.0
+pkgdesc = Multi functional app to find duplicates, empty folders, similar images etc.
+source = https://github.com/qarmin/czkawka/releases/download/6.1.0/linux_czkawka_cli

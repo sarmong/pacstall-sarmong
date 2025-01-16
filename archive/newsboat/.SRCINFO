@@ -1,0 +1,4 @@
+pkgver = 2.27
+pkgdesc = An RSS/Atom feed reader for text terminals
+source = https://github.com/newsboat/newsboat/archive/refs/tags/r2.27.zip
+depends = gettext libxml2 libjson-c-dev

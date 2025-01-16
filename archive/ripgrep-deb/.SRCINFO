@@ -1,0 +1,5 @@
+pkgname = ripgrep
+pkgver = 13.0.0
+pkgdesc = ripgrep recursively searches directories for a regex pattern while respecting your gitignore
+source = https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
+breaks = ripgrep ripgrep-git ripgrep-bin ripgrep-app

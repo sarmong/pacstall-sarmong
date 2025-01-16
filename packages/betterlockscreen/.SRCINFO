@@ -1,0 +1,9 @@
+pkgname = betterlockscreen
+pkgver = 4.2.0
+pkgdesc = Sweet looking lockscreen for linux system
+source = https://github.com/betterlockscreen/betterlockscreen/archive/refs/tags/v4.2.0.tar.gz
+depends = i3lock
+depends = imagemagick
+depends = bc
+makedepends = imagemagick
+pacdeps = i3lock-color

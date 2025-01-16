@@ -1,0 +1,4 @@
+pkgname = zoxide
+pkgver = 0.9.2
+pkgdesc = A fast cd command that learns your habits
+source = https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.2/zoxide_0.9.2_amd64.deb

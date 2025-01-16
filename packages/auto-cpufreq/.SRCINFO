@@ -1,0 +1,4 @@
+pkgname = auto-cpufreq
+pkgver = 2.0.0
+pkgdesc = Automatic CPU speed & power optimizer for Linux
+source = https://github.com/AdnanHodzic/auto-cpufreq/archive/refs/tags/v2.0.0.tar.gz

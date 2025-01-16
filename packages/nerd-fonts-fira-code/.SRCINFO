@@ -1,0 +1,4 @@
+pkgname = nerd-fonts-fira-code
+pkgver = 3.0.2
+pkgdesc = Patched font Fira Code from nerd-fonts library
+source = https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/FiraCode.zip

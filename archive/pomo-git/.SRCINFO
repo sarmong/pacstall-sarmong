@@ -1,0 +1,3 @@
+pkgname = pomo
+pkgdesc = Pomodoro CLI
+source = https://github.com/kevinschoon/pomo.git

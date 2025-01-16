@@ -1,0 +1,5 @@
+pkgname = frece-bin
+gives = frece
+pkgver = 1.0.6
+pkgdesc = Maintain a database sorted by frecency (frequency + recency)
+source = https://github.com/YodaEmbedding/frece/releases/download/v1.0.6/x86_64-unknown-linux-gnu.tar.gz

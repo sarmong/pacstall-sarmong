@@ -1,0 +1,4 @@
+pkgname = gendesk
+pkgver = 1.0.9
+pkgdesc = Generate .desktop files and download .png icons by specifying a minimum of information
+source = https://github.com/xyproto/gendesk/releases/download/1.0.9/gendesk-1.0.9-linux_static.tar.xz

@@ -1,0 +1,4 @@
+pkgname = nerd-fonts-fira-mono
+pkgver = 3.0.2
+pkgdesc = Patched font Fira Mono from nerd-fonts library
+source = https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/FiraMono.tar.xz

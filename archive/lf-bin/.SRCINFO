@@ -1,0 +1,4 @@
+pkgname = lf
+pkgver = 31
+pkgdesc = Terminal file manager
+source = https://github.com/gokcehan/lf/releases/download/r31/lf-linux-amd64.tar.gz

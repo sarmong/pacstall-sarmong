@@ -1,0 +1,10 @@
+pkgname = volctl
+pkgver = 0.9.4
+pkgdesc = Per-application volume control and OSD for Linux desktops
+source = https://github.com/buzz/volctl/archive/refs/tags/v0.9.4.zip
+depends = python3
+depends = python3-setuptools
+depends = python3-cairo
+depends = python3-gi
+depends = python3-venv
+pacdeps = python3-pulsectl

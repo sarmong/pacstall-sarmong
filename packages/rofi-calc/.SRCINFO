@@ -1,0 +1,12 @@
+pkgname = rofi-calc
+pkgver = 2.2.0
+pkgdesc = Do live calculations in rofi!
+source = https://github.com/svenstaro/rofi-calc/archive/refs/tags/v2.2.0.zip
+depends = rofi-dev
+depends = qalc
+depends = libtool
+depends = libtool-bin
+makedepends = rofi-dev
+makedepends = qalc
+makedepends = libtool
+makedepends = libtool-bin

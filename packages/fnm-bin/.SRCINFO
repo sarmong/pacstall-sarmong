@@ -1,0 +1,5 @@
+pkgname = fnm-bin
+gives = fnm
+pkgver = 1.35.1
+pkgdesc = Fast and simple Node.js version manager, built in Rust
+source = https://github.com/Schniz/fnm/releases/download/v1.35.1/fnm-linux.zip

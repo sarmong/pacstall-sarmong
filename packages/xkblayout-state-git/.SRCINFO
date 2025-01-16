@@ -1,0 +1,7 @@
+pkgname = xkblayout-state-git
+gives = xkblayout-state
+pkgver = 1.0
+pkgdesc = A small command-line program to get/set the current keyboard layout.
+source = https://github.com/nonpop/xkblayout-state.git
+depends = libx11-dev
+replaces = xkblayout-state-git

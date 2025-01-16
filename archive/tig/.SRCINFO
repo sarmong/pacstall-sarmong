@@ -1,0 +1,4 @@
+pkgver = 2.5.5
+pkgdesc = Text-mode interface for git
+source = https://github.com/jonas/tig/archive/refs/tags/tig-2.5.5.zip
+depends = libncurses-dev

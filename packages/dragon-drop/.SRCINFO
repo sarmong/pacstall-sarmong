@@ -1,0 +1,6 @@
+pkgname = dragon-drop
+pkgver = 1.2.0
+pkgdesc = Drag and drop source/target for X
+source = https://github.com/mwh/dragon/archive/refs/tags/v1.2.0.zip
+depends = libgtk-3-dev
+makedepends = libgtk-3-dev

@@ -1,0 +1,6 @@
+pkgname = bottom
+gives = bottom
+pkgver = 0.9.6
+pkgdesc = Yet another cross-platform graphical process/system monitor.
+source = https://github.com/ClementTsang/bottom/releases/download/0.9.6/bottom_0.9.6_amd64.deb
+breaks = bottom bottom-git bottom-bin bottom-app
