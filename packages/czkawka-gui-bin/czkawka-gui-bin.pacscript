@@ -2,6 +2,7 @@ pkgname="czkawka-gui-bin"
 gives="czkawka-gui"
 pkgdesc="Multi functional app to find duplicates, empty folders, similar images etc."
 pkgver="6.1.0"
+arch=("amd64")
 source=(
   "https://github.com/qarmin/czkawka/releases/download/${pkgver}/linux_czkawka_gui"
   "https://raw.githubusercontent.com/sarmong/pacstall-sarmong/master/packages/${pkgname}/${gives}.desktop"
@@ -14,7 +15,6 @@ sha256sum=(
 )
 
 package() {
-   cd "${_archive}"
   install -Dm755 linux_czkawka_gui "${pkgdir}/usr/local/bin/${gives}"
 
   install -Dm644 "${gives}.desktop" -t "${pkgdir}/usr/share/applications"
