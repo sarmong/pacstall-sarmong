@@ -16,5 +16,5 @@ pkgver() {
 
 package() {
     cd "${gives}"
-   make PREFIX="${pkgdir}/usr/local" install
+   make DESTDIR="${pkgdir}" PREFIX="/usr/local" install
 }
